@@ -1,0 +1,335 @@
+.nav-header {
+  width: 90%;
+  margin: auto;
+  margin-top: 5rem;
+  nav {
+    flex-wrap: wrap;
+    @include flex(unset, center, row);
+
+    .logo {
+      flex: 1;
+    }
+  }
+
+  nav ul {
+    list-style: none;
+    flex: 1;
+    @include flex(space-evenly, center, row);
+  }
+
+  nav a {
+    font-family: $font_raleway;
+    font-size: $header5;
+    color: $primary_very_dark_blue;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary_desaturated_blue;
+    }
+  }
+}
+
+.intro-container {
+  margin-top: 10rem;
+  padding: 1rem 6rem;
+  @include flex(space-between, center, row);
+
+  .intro-content {
+    h1 {
+      color: $primary_very_dark_blue;
+      font-family: $font_raleway;
+      font-size: $header1;
+    }
+
+    p {
+      margin-top: 3rem;
+      font-size: $header5;
+    }
+
+    .get-started {
+      margin-top: 2rem;
+      input {
+        padding: 1rem;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.5rem;
+        border: 1px solid $primary_desaturated_blue;
+        width: 300px;
+      }
+
+      button {
+        margin-left: 1rem;
+        padding: 1.3rem 5rem;
+        background: $accent_bright_blue;
+        border: none;
+        box-shadow: 0px 10px 10px rgba(#000000, 0.1),
+          0px 20px 40px rgba(#000000, 0.1);
+        border-radius: 0.5rem;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+        font-family: $font_raleway;
+
+        &:hover {
+          filter: brightness(120%);
+        }
+      }
+    }
+  }
+
+  .intro-illustration {
+    img {
+      max-width: 50vw;
+      max-height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.bg-desktop {
+  margin-top: 10rem;
+  content: url("../images/bg-curve-desktop.svg");
+  width: 100%;
+}
+
+.stay-productive-container {
+  @include flex(space-between, center, row);
+  padding: 5rem 6rem;
+
+  background-color: $neutral_light_grayish_blue;
+
+  .stay-content {
+    h2 {
+      font-family: $font_raleway;
+      font-size: $header2;
+    }
+    p {
+      font-size: $header5;
+      margin-top: 3rem;
+    }
+
+    .fylo-work {
+      margin-top: 2rem;
+      a {
+        text-decoration: underline;
+        text-underline-offset: 0.5rem;
+        color: $accent_moderate_cyan;
+        font-size: $header5;
+        margin-top: 5rem;
+
+        &:hover {
+          filter: brightness(120%);
+        }
+      }
+    }
+
+    .card {
+      margin-top: 5rem;
+      width: 60%;
+      padding: 2rem 2rem;
+      border-radius: 0.5rem;
+      background: url("../images/icon-quotes.svg") no-repeat $neutral_white;
+      background-position: 7% 7%;
+      box-shadow: 0px 10px 10px rgba(#000000, 0.1),
+        0px 20px 40px rgba(#000000, 0.1);
+
+      p {
+        font-size: small;
+        line-height: 2rem;
+        color: $primary_very_dark_blue;
+      }
+      .avatar-title {
+        margin-top: 2rem;
+        @include flex(flex-start, center, row);
+
+        img {
+          max-width: 15%;
+          border-radius: 50%;
+        }
+
+        .name-role {
+          margin-left: 2rem;
+          h3 {
+            font-family: $font_raleway;
+            font-weight: bolder;
+            color: $primary_very_dark_blue;
+          }
+          h4 {
+            margin-top: 0.5rem;
+            font-family: $font_raleway;
+            font-weight: lighter;
+            color: $primary_desaturated_blue;
+          }
+        }
+      }
+    }
+  }
+  .stay-illustration {
+    img {
+      max-width: 50vw;
+      max-height: 100%;
+    }
+  }
+}
+
+.early-access-container {
+  @include flex(space-between, center, row);
+  background-color: $primary_desaturated_blue;
+  min-height: 40vh;
+  padding: 1rem 6rem;
+
+  .early-content {
+    h2 {
+      font-family: $font_raleway;
+      font-size: $header2;
+      color: $neutral_white;
+    }
+    p {
+      font-size: $header5;
+      margin-top: 3rem;
+      color: $neutral_white;
+    }
+  }
+
+  .early-sign-up {
+    @include flex(center, center, column);
+
+    input {
+      box-shadow: 0px 10px 10px rgba(#000000, 0.1),
+        0px 20px 40px rgba(#000000, 0.1);
+      padding: 1rem;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.5rem;
+      width: 500px;
+    }
+
+    button {
+      margin-top: 2rem;
+      align-self: flex-start;
+      padding: 1.3rem 5rem;
+      background: $accent_bright_blue;
+      border: none;
+      box-shadow: 0px 10px 10px rgba(#000000, 0.1),
+        0px 20px 40px rgba(#000000, 0.1);
+      border-radius: 0.5rem;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      font-family: $font_raleway;
+
+      &:hover {
+        filter: brightness(120%);
+      }
+    }
+  }
+}
+
+.footer-section {
+  @include flex(space-between, center, row);
+  background-color: $primary_very_dark_blue;
+  padding: 1rem 6rem;
+  min-height: 50vh;
+
+  .logo-email {
+    @include flex(center, center, column);
+
+    .telephone-info {
+      margin-top: 2rem;
+      .phone {
+        @include flex(flex-start, center, row);
+
+        p {
+          margin-left: 1rem;
+          color: $neutral_white;
+          font-size: small;
+        }
+      }
+
+      .email {
+        @include flex(flex-start, center, row);
+        margin-top: 2rem;
+
+        p {
+          margin-left: 1rem;
+          color: $neutral_white;
+          font-size: small;
+        }
+      }
+    }
+  }
+
+  .about-sitemap {
+    ul {
+      list-style: none;
+      font-size: small;
+      line-height: 3rem;
+    }
+
+    ul a {
+      text-decoration: none;
+      color: $neutral_white;
+
+      &:hover {
+        color: $accent_bright_blue;
+      }
+    }
+  }
+
+  .contact-terms {
+    ul {
+      list-style: none;
+      font-size: small;
+      line-height: 3rem;
+    }
+
+    ul a {
+      text-decoration: none;
+      color: $neutral_white;
+
+      &:hover {
+        color: $accent_bright_blue;
+      }
+    }
+  }
+
+  .social-section {
+    @include flex(center, center, row);
+
+    a {
+      padding: 1rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      .fab {
+        color: $neutral_white;
+      }
+
+      &:hover {
+        .fab {
+          color: $accent_bright_blue;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+.errorLabel {
+  font-size: small;
+}
+
+.errorLabelTwo {
+  font-size: small;
+  margin-top: 1rem;
+  align-self: flex-start;
+}
+
+.attribution {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.attribution a {
+  text-align: center;
+  font-weight: bolder;
+  color: $primary_very_dark_blue;
+}

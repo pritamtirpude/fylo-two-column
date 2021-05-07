@@ -1,0 +1,42 @@
+$header1: 4rem;
+$header2: 3.5rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$header5: 1.5rem;
+$header6: 1rem;
+
+$primary_very_dark_blue: hsl(243, 87%, 12%);
+$primary_desaturated_blue: hsl(238, 22%, 44%);
+
+$accent_bright_blue: hsl(224, 93%, 58%);
+$accent_moderate_cyan: hsl(170, 45%, 43%);
+
+$neutral_light_grayish_blue: hsl(240, 75%, 98%);
+$neutral_light_gray: hsl(0, 0%, 75%);
+$neutral_white: hsl(0, 0%, 100%);
+
+$font_raleway: "Raleway", sans-serif;
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}

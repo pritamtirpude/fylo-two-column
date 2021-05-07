@@ -1,0 +1,114 @@
+@import "global";
+@import "container";
+
+@media screen and (max-width: 900px) {
+  .intro-container {
+    flex-wrap: wrap-reverse;
+
+    br {
+      display: none;
+    }
+    .intro-content {
+      margin-top: 3rem;
+      text-align: center;
+      h1 {
+        font-size: $header3;
+      }
+
+      .get-started {
+        input {
+          width: 100%;
+        }
+        button {
+          margin-left: 0rem;
+          margin-top: 2rem;
+          width: 100%;
+        }
+      }
+    }
+
+    .intro-illustration {
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .bg-desktop {
+    content: url("../images/bg-curve-mobile.svg");
+    width: 100%;
+  }
+
+  .stay-productive-container {
+    flex-wrap: wrap-reverse;
+
+    br {
+      display: none;
+    }
+
+    .stay-content {
+      margin-top: 3rem;
+      h2 {
+        font-size: 1.9rem;
+        text-align: center;
+      }
+      p {
+        color: $primary_desaturated_blue;
+      }
+
+      .fylo-work {
+        text-align: center;
+      }
+
+      .card {
+        width: 100%;
+      }
+    }
+    .stay-illustration {
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .early-access-container {
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 5rem;
+    justify-content: center;
+
+    br {
+      display: none;
+    }
+    .early-sign-up {
+      margin-top: 3rem;
+      input {
+        width: 80vw;
+      }
+      button {
+        width: 100%;
+      }
+    }
+  }
+
+  .footer-section {
+    @include flex(flex-start, center, column);
+    padding: 5rem;
+
+    .about-sitemap {
+      margin-top: 3rem;
+    }
+
+    .contact-terms {
+      margin-top: 3rem;
+    }
+
+    .social-section {
+      margin-top: 3rem;
+    }
+  }
+}

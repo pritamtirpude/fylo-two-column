@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+        <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  </head>
+  <body>
+    <header class="nav-header">
+      <nav>
+        <div class="logo">
+         <a href="#"><img src="./images/logo.svg"/></a> 
+        </div>
+        <ul>
+          <li><a href="#">Feature</a></li>
+          <li> <a href="#">Team</a></li>
+          <li> <a href="#">Sign In</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main role="main">
+      <section>
+        <div class="intro-container">
+          <div class="intro-content">
+            <h1> All your files in one secure <br> location, accessible
+              anywhere.</h1>
+              <p>Fylo stores your most important files in one secure location.
+                Access <br> them wherever you need, share and collaborate with friends, family,<br>
+                and co-workers.</p>
+                <div class="get-started">
+                  <input type="email" placeholder="Enter your email..." id="email-text">
+                  <button type="submit" id="btn-check">Get Started</button>
+                  <div class="errorLabel"></div>
+                </div>
+          </div>
+          <div class="intro-illustration">
+            <img src="./images/illustration-1.svg">
+          </div>
+        </div>
+      </section>
+      <div class="bg-desktop"></div>
+      <section>
+        <div class="stay-productive-container">
+          <div class="stay-content">
+            <h2>Stay productive, wherever you are</h2>
+            <p>Never let location be an issue when accessing your files. Fylo has you <br> covered for all
+              of your file storage needs. <br> <br>
+              <p>  Securely share files and folders with friends,
+                family and colleagues for <br> live collaboration. No email attachments required!</p></p>
+              <div class="fylo-work">
+                <a href="#">See how Fylo works <img src="./images/icon-arrow.svg"></a>
+              </div>
+           
+              <div class="card">
+                <p>Fylo has improved our team productivity by an order of
+                  magnitude. Since making the switch our team has become a well-oiled
+                  collaboration machine.</p>
+                  <div class="avatar-title">
+                    <img src="./images/avatar-testimonial.jpg" alt="Kyle Burton">
+                    <div class="name-role">
+                      <h3>Kyle Burton</h3>
+                      <h4>Founder & CEO, Huddle</h4>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="stay-illustration">
+            <img src="./images/illustration-2.svg">
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="early-access-container">
+          <div class="early-content">
+            <h2>Get early access
+              today</h2>
+              <p>It only takes a minute to sign up and our free starter tier is <br>
+                extremely generous. If you have any questions, our support team <br> would be
+                happy to help you.</p>
+          </div>
+          <div class="early-sign-up">
+            <input type="email" placeholder="email@example.com" id="email-text-two"/>
+            <div class="errorLabelTwo"></div>
+            <button type="submit" id="btn-check-two">Get Started For Free</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="footer-section">
+          <div class="logo-email">
+            <div class="logo-footer">
+             <a href="#"><img src="./images/logo_footer.svg"></a>
+            </div>
+            <div class="telephone-info">
+              <div class="phone">
+                <img src="./images/icon-phone.svg"> 
+                <p>Phone: +1-543-123-4567</p>
+              </div>
+              <div class="email">
+                <img src="./images/icon-email.svg">
+                <p>example@fylo.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-sitemap">
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="contact-terms">
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+          </div>
+
+          <div class="social-section">
+            <div class="facebook" title="facebook">
+              <a
+                href="https://www.facebook.com/pritam.tirpude.1/"
+                target="_blank" 
+                ><i class="fab fa-facebook fa-3x"></i
+              ></a>
+            </div>
+            <div class="twitter" title="twitter">
+              <a href="https://twitter.com/ptirpude1991" target="_blank"
+                ><i class="fab fa-twitter fa-3x"></i
+              ></a>
+            </div>
+            <div class="instagram" title="instagram">
+              <a href="https://www.instagram.com/pr.itam6519/" target="_blank"
+                ><i class="fab fa-instagram fa-3x"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+       
+      </section>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/Pritam-Tirpude" target="_blank">Pritam Tirpude</a>.
+      </p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
