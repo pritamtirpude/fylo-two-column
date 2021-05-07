@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Huddle Curvy Section Solution](https://www.frontendmentor.io/challenges/huddle-landing-page-with-curved-sections-5ca5ecd01e82137ec91a50f2/hub/html5-css3-sass-flexbox-e3kh0zOdu)
-- Live Site URL: [Live Site](https://huddle-curvy-site.netlify.app/)
+- Solution URL: [Fylo Two Column Solution](https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5/hub/html5css3sassflexjavascript-24jho_lya)
+- Live Site URL: [Live Site](https://fylo-two-column.netlify.app/)
 
 ## My process
 
